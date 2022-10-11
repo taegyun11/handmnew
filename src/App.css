@@ -3,6 +3,7 @@
     justify-content: flex-end;
     margin: 50px;
     margin-right: 100px;
+    cursor: pointer;
 }
 .icon-margin{
     margin-top: 5px;
@@ -35,4 +36,33 @@
 .search-area input{
     border: none;
     margin-left: 5px;
+}
+.product-card{
+    border: none !important;
+    margin-bottom: 10px;
+}
+.product-card:hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+.product-img{
+    display: flex;
+    justify-content: flex-end;
+}
+.product-info{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.conscious-choice{
+    font-size:11px;
+    color: #63786a;
+    font-weight: bold;
+    height: 20px;
+}
+.drop-down{
+    margin-top:20px;
+}
+.add-button{
+    margin-top:20px;
+    width: 100%;
 }
