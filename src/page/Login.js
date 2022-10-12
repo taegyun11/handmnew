@@ -7,7 +7,6 @@ const Login = ({setAuthenticate}) => {
   
   const loginUser=(event)=>{
     event.preventDefault();
-    console.log("Login Attempted");
     setAuthenticate(true);
     navigate('/')
   }
@@ -23,7 +22,7 @@ const Login = ({setAuthenticate}) => {
           <Form.Control type="password" placeholder="Password" />
         </Form.Group>
         <Button variant="danger" type="submit">
-          Submit
+          Login
         </Button>
       </Form>
     </Container>
