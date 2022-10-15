@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row, Grid } from "react-bootstrap";
 import ProductCard from "./ProductCard";
 import { useSearchParams } from "react-router-dom";
+
 
 
 const ProductAll = () => {
@@ -21,10 +22,10 @@ const ProductAll = () => {
   return (
     <div>
       <Container>
-        <Row>
+        <Row className="mobile-productCard">
           {productList.map((menu) => (
-            <Col lg={3}>
-              <ProductCard item={menu} />
+            <Col className="product-card-position" sm={12} lg={3} >
+              <ProductCard  item={menu} />
             </Col>
           ))}
         </Row>

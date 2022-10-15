@@ -21,17 +21,17 @@ const ProductDetail = () => {
   }, []);
   if (loading || product == null) return <h1>Loading</h1>;
   return (
-    <Container>
-      <Row>
-        <Col className="product-img">
+    <Container className="product-detail-container">
+      <Row className="product-detail-row">
+        <Col className="product-img product-detail-img">
           <img src={product?.img} />
         </Col>
-        <Col>
+        <Col >
           <div className="product-info">{product?.title}</div>
           <div className="product-info">₩{product?.price}</div>
           <div className="choice">
-              {product.choice ? "Conscious choice" : ""}
-            </div>
+            {product.choice ? "Conscious choice" : ""}
+          </div>
           <Dropdown className="drop-down">
             <Dropdown.Toggle id="dropdown-basic" title="Size">
               Select Size
